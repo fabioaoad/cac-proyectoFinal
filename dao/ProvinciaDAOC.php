@@ -6,7 +6,7 @@ class ProvinciaDAOC {
        require_once("../dataBase/ConexionDB.php");
        require_once("../model/Provincia.php");
     
-        $conexionDB = new ConexionDB("localhost","id19023603_root","","id19023603_cacproyecto");
+        $conexionDB = new ConexionDB("localhost","root","","cacproyecto");
         $conexionDB->conectar();
     
         $sql="SELECT * FROM provincias WHERE idprovincia = $id";
@@ -24,7 +24,7 @@ class ProvinciaDAOC {
         require_once("../model/Provincia.php");
         require_once("../dataBase/ConexionDB.php");
     
-        $conexionDB = new ConexionDB("localhost","id19023603_root","","id19023603_cacproyecto");
+        $conexionDB = new ConexionDB("localhost","root","","cacproyecto");
         $conexionDB->conectar();
     
         $sql="SELECT * FROM provincias";

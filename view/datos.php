@@ -2,7 +2,7 @@
        require_once("../dataBase/ConexionDB.php");
        require_once("../model/Localidad.php");
 
-       $conexionDB = new ConexionDB("localhost","id19023603_root","","id19023603_cacproyecto");
+       $conexionDB = new ConexionDB("localhost","root","","cacproyecto");
        $conexionDB->conectar();
 
        $continente=$_POST['continente'];

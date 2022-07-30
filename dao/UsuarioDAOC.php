@@ -49,7 +49,7 @@ class UsuarioDAOC {
 
         require_once("../dataBase/ConexionDB.php");
     
-        $conexionDB = new ConexionDB("localhost","id19023603_root","","id19023603_cacproyecto");
+        $conexionDB = new ConexionDB("localhost","root","","cacproyecto");
         $conexionDB->conectar();
     
         $sql="INSERT INTO usuarios (`usuario`, `clave`) VALUES ('$usu', '$pass')";
@@ -63,7 +63,7 @@ class UsuarioDAOC {
         require_once("../model/Usuario.php");
         require_once("../dataBase/ConexionDB.php");
     
-        $conexionDB = new ConexionDB("localhost","id19023603_root","","id19023603_cacproyecto");
+        $conexionDB = new ConexionDB("localhost","root","","cacproyecto");
         $conexionDB->conectar();
     
         $sql="SELECT * FROM usuarios";
