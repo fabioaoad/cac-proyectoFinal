@@ -36,7 +36,7 @@ $(document).ready(function() {
         $("#lastName").val(pr.find("td")[2].textContent);
         $("#email").val(pr.find("td")[3].textContent);
         $("#address").val(pr.find("td")[4].textContent);
-        $("#state").val(pr.find("td")[6].dataset.idprovincia).change();
+        $("#lista1").val(pr.find("td")[6].dataset.idprovincia).change();
         $("#country").val(pr.find("td")[5].dataset.idlocalidad);
         $("#zip").val(pr.find("td")[7].textContent);
         $("[name='paymentMethod'][value='" + pr.find("td")[8].textContent + "']").prop('checked', true).change();
@@ -57,8 +57,7 @@ $(document).ready(function() {
             processData: false,
             contentType: false,
 
-            success: function(res) {
-                console.log(res);
+            success: function(res) {               
                 if (res == 1) {
                     location.reload();
                 }

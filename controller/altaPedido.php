@@ -14,7 +14,6 @@ $tarjtitular = $_POST['cc-name'];
 $tarjnumero = $_POST['cc-number'];
 $tarjvto = $_POST['cc-expiration'];
 $tarjclave = $_POST['cc-cvv'];
-
 //populate poo
 require_once("../model/Pedido.php");
 require_once("../model/Localidad.php");

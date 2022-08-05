@@ -134,7 +134,7 @@
                 </div>
                 <div class="modal-footer">
                     <button id="btnNo" type="button" class="btn btn-danger" data-bs-dismiss="modal">No</button>
-                    <button id="btnSi" type="button" data-bs-dismiss="modal" class="btn btn-success">Sí</button>
+                    <button type="button" data-bs-dismiss="modal" class="btn btn-success btnSi">Sí</button>
                 </div>
             </div>
         </div>
@@ -220,8 +220,8 @@
 
                         <div class="row">
                             <div class="col-md-4 mb-3">
-                                <label for="state">Provincia</label>
-                                <select id="state" name="state" class="custom-select d-block w-100" name="state" required>
+                                <label for="lista1">Provincia</label>
+                                <select id="lista1" name="lista1" class="custom-select d-block w-100" name="lista1" required>
                                     <option value="0">Seleccioná...</option>
                                     <?php
                                     require_once("../dao/ProvinciaDAOC.php");
@@ -253,10 +253,10 @@
 
                             <script type="text/javascript">
                                 $(document).ready(function() {
-                                    $('#state').val(0);
+                                    $('#lista1').val(0);
                                     recargarLista();
 
-                                    $('#state').change(function() {
+                                    $('#lista1').change(function() {
                                         recargarLista();
                                     });
                                 })
@@ -266,7 +266,7 @@
                                     $.ajax({
                                         type: "POST",
                                         url: "datos.php",
-                                        data: "continente=" + $('#state').val(),
+                                        data: "continente=" + $('#lista1').val(),
                                         success: function(r) {
                                             $('#country').html(r);
                                         }

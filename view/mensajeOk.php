@@ -6,12 +6,45 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="css/estilo.css" rel="stylesheet" type="text/css">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
+<header>
+      <nav>
+          <div id="header">
+              <ul class="nav">
+                  <li><a href="inicio.html">Inicio</a></li>
+                  <li><a href="">Usuarios</a>
+                              <ul>
+                                  <li><a href="altaUsuarioC.html">Crear Usuario</a></li>
+                                  <li><a href="listadoUsuariosC.php">Listado de Usuarios</a></li>
+                              </ul>
+                          </li>
+                  </li>
+                  <li><a href="">Pedidos</a>
+                      <ul>
+                          <li><a href="listadoPedidosC.php">Listado de Pedidos</a></li>
+                          <li><a href="pedidoC.php">Cargar Pedido</a></li>
+                      </ul>
+                  </li>
+          </li>
+                  
+                  <li><a href="">Acerca de</a>
+                      <ul>
+                          <li><a href="">Nosotros</a></li>
+                          <li><a href="">Nuestra Misión</a></li>
+                          <li><a href="http://www.facebook.com">Historia</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="">Contacto</a></li>
+              </ul>
+          </div>
+      </nav>
+  </header>
 
   <div class="container">
     <div class="py-4 text-center">
